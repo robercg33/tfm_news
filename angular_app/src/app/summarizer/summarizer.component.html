@@ -1,0 +1,13 @@
+<div>
+    <h2>Text Summarization</h2>
+    <form (ngSubmit)="summarize()">
+      <mat-form-field>
+        <textarea matInput placeholder="Enter text" [(ngModel)]="inputText" name="inputText"></textarea>
+      </mat-form-field>
+      <button mat-raised-button type="submit">Summarize</button>
+    </form>
+    <div *ngIf="summary">
+      <h3>Summary:</h3>
+      <p>{{ summary }}</p>
+    </div>
+  </div>

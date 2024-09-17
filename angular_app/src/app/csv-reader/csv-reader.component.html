@@ -1,0 +1,12 @@
+<div class="tm-mb-80 tm-p-50" [ngClass]="getBackgroundClass(item.category)" *ngFor="let item of csvData">
+  <div class="tm-about-header tm-flex-center">
+    <div class="icon-text-container">
+      <i [ngClass]="getIconClass(item.category)" class="icon-class"></i>
+      <h2>{{getNameClass(item.category)}}</h2>
+    </div>
+    <h1>{{ item.header }}</h1>
+    <div class="text-container">
+      <p class="tm-mb-40">{{ item.summary }}</p>
+    </div>
+  </div>
+</div>
